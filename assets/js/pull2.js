@@ -1,5 +1,4 @@
-// Pull.js file 
-$.getJSON('https://cdn-assets-hall-com.s3.amazonaws.com/production/private/halls/53e242dc3d97d2d21e00000f/user_uploaded_files/busstops.json?AWSAccessKeyId=17VVCSSS3H6YGDY9H3G2&Expires=1440643640&Signature=tcNEiWlcxUVpGqPin3MPCaWb0jM%3D&response-content-type=application%2Fjson', function(lstops){
+$.getJSON('assets/json/busstops.json', function(busstops){
     $('#busstoplist').empty();
     
     $.each(busstops, function(i, busstop){
